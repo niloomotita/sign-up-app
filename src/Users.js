@@ -10,6 +10,7 @@ class Users extends Component {
             <h3> Name </h3>
             <h3> Email </h3>
             <h3> Phone Number</h3>
+            <h3> Remove / Edit</h3>
           </div>
             <ul className="people-list">
               {this.props.people.map((p)=>(
@@ -18,7 +19,10 @@ class Users extends Component {
                     <p>{p.name}</p>
                     <p>{p.email}</p>
                     <p>{p.phone}</p>
+                    <div className="remove-edit">
                     <button className="remove"></button>
+                    <button className="edit"></button>
+                    </div>
                  </div>
                 </li>
               ))}
