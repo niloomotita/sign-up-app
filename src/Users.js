@@ -8,7 +8,7 @@ class Users extends Component {
         <div className="App">
           <div className="title">
             <h3> Name </h3>
-            <h3> Email </h3>
+            <h3> E-mail </h3>
             <h3> Phone Number</h3>
             <h3> Remove / Edit</h3>
           </div>

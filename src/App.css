@@ -85,3 +85,29 @@ html {
  .remove-edit{
      padding-top: 10px;
  }
+ .add-user{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+ }
+ input{
+    padding: 10px;
+    margin-right: 30px;
+   
+ }
+ .add{
+        padding-left: 20px;
+        margin-left: 20px;
+        align-self: center;
+        width: 32px;
+        height: 32px;
+        background-color: transparent;
+        background-image: url('./icons/user-plus.svg');
+        background-size: 100% 100%;
+        border: 0;
+        color: black;
+        font-size: 0;
+        vertical-align: middle;
+        cursor: pointer;
+        outline: none;
+ }
