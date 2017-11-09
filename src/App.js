@@ -32,10 +32,11 @@ class App extends Component {
     ]
   }
 
-  removeParticipant(participant){
+  removeParticipant =(participant)=>{
     this.setState((state)=>({
-      participants: state.participants.filter((p)=> p.id !== participant.id 
-    )}))
+      participants:state.participants.filter((p)=> p.id !== participant.id)
+
+    }))
   }
   render() {
     return (
@@ -44,7 +45,10 @@ class App extends Component {
           <h1>List of Participants</h1>
         </header>
         <div className="container">
-          <Users people ={this.state.participants}/>
+          <Users 
+          participants ={this.state.participants}
+          onRemove={this.removeParticipant}
+          />
         </div>
       </div>
     );

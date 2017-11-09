@@ -13,14 +13,14 @@ class Users extends Component {
             <h3> Remove / Edit</h3>
           </div>
             <ul className="people-list">
-              {this.props.people.map((p)=>(
+              {this.props.participants.map((p)=>(
                 <li key={p.id} className="list-item">
                  <div className="details">
                     <p>{p.name}</p>
                     <p>{p.email}</p>
                     <p>{p.phone}</p>
                     <div className="remove-edit">
-                    <button className="remove"></button>
+                    <button className="remove" onClick={()=>this.props.onRemove(p)}></button>
                     <button className="edit"></button>
                     </div>
                  </div>
