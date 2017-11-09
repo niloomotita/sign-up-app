@@ -43,6 +43,7 @@ class App extends Component {
       <div className="app">
         <header className="header">
           <h1>List of Participants</h1>
+          <h2>Add a new participant</h2>
           <div className="add-user">
             <input type="text" name="" id="" placeholder=" name "/>
             <input type="text" name="" id="" placeholder=" E-mail address "/>
