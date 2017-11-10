@@ -12,9 +12,9 @@ class AddUser extends Component {
         return(
         <div className="add-user">
             <form onSubmit={this.handleSubmit}>
-                <input type="text" name="name"  placeholder=" name "/>
-                <input type="text" name="email"  placeholder=" E-mail address "/>
-                <input type="text" name="phone"  placeholder=" phone number "/>
+                <input type="text" name="name"  placeholder=" name " required/>
+                <input type="email" name="email"  placeholder=" E-mail address " required/>
+                <input type="tel" size="15" minLength="7" maxLength="10" name="phone"  placeholder=" phone number " required/>
                 <button className="add"></button>
             </form>    
           </div>

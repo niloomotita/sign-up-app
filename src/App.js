@@ -39,8 +39,8 @@ class App extends Component {
     }))
   }
   addParticipant = (participant)=>{
-    this.setState(state=>({
-      participants:this.state.participants.concat([participant])
+    this.setState((state)=>({
+      participants:state.participants.concat([participant])
     }))
     
   }
