@@ -6,7 +6,7 @@ class AddUser extends Component {
     handleSubmit =(e)=>{
         e.preventDefault()
         const values = serializeForm(e.target, {hash: true})
-        this.props.onAddUser(values);
+        this.props.onAddUser(values)
     }
     render(){
         return(

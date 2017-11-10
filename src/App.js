@@ -38,13 +38,21 @@ class App extends Component {
 
     }))
   }
+  addParticipant = (participant)=>{
+    this.setState(state=>({
+      participants:this.state.participants.concat([participant])
+    }))
+    
+  }
   render() {
     return (
       <div className="app">
         <header className="header">
           <h1>List of Participants</h1>
           <h2>Add a new participant</h2>
-          <Adduser/>
+          <Adduser
+          onAddUser={this.addParticipant}
+          />
         </header>
         <div className="container">
           <Users 

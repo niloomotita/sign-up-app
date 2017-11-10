@@ -3,7 +3,7 @@ import './App.css';
 
 class Users extends Component {
     render() {
-         console.log('props', this.props)
+
       return (
         <div className="App">
           <div className="title">
@@ -14,7 +14,7 @@ class Users extends Component {
           </div>
             <ul className="people-list">
               {this.props.participants.map((p)=>(
-                <li key={p.id} className="list-item">
+                <li key={p.name} className="list-item">
                  <div className="details">
                     <p>{p.name}</p>
                     <p>{p.email}</p>
