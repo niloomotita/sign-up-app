@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Users from './Users.js'
-
+import Adduser from './AddUser.js'
 
 
 
@@ -44,12 +44,7 @@ class App extends Component {
         <header className="header">
           <h1>List of Participants</h1>
           <h2>Add a new participant</h2>
-          <div className="add-user">
-            <input type="text" name="" id="" placeholder=" name "/>
-            <input type="text" name="" id="" placeholder=" E-mail address "/>
-            <input type="text" name="" id="" placeholder=" phone number "/>
-            <button className="add"></button>
-          </div>
+          <Adduser/>
         </header>
         <div className="container">
           <Users 
